@@ -11,38 +11,49 @@ html{
 }
 
 body{
-  background-image: linear-gradient(to right, black, black, black, black, rgba(48, 47, 47, 0.933));
+  background-color: #ffffff9a;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.184);
 }
-/* .leftnav{
+.leftnav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -10px;
+  margin-bottom: 20px;
   margin-left: 10px;
-} */
+}
 .rightnav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  font-size: 10px;
-  /* margin-right: 80px;
-  margin-bottom: 40px; */
+}
+.rightnav a h2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-right: 80px;
+  margin-bottom: 20px;
 }
 .rightnav h2{
-  color: white;
+  color: rgba(59, 28, 28, 0.834);
+}
+.rightnav h2:hover{
+  color: rgb(255, 12, 12)
 }
 
-.rightnav i{
+/* .rightnav i{
   padding: 6px;
-  color: white;
-}
+  color: black;
+} */
 .sectioncontainer{
   display: flex;
   justify-content: center;
@@ -56,51 +67,83 @@ nav{
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin: 30px 0;
+  animation: 0.9s ease-in forwards;
+
+  /* margin: 50px; */
 
   
 }
-.sectioncontainerimg img{
+/* .sectioncontainerimg img{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 400px;
   width: 350px;
   position: relative;
-  z-index: -30;
+  z-index: -30; */
   
-}
-.sectioncontainertext h2{
+/* } */
+/* .sectioncontainertext h2{
   display: flex;
   justify-content: center;
   align-items: center;
   color: red;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 .sectioncontainertext h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 38px;
+  padding: 50px;
+  color: whitesmoke;
+  font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
-.sectioncontainertext p{
+.sectioncontainertext h4{
   display: flex;
   justify-content: center;
+  /* margin-left: 110px; */
+  padding-bottom: 10px;
+  margin-top: -30px;
+  padding-left: 80px;
   align-items: center;
   color: whitesmoke;
-  font-size: 15px;
+  font-size: 20px;
+  text-align: center;
   /* margin: 5px; */
 }
-.sectioncontainerbutton button{
+.sectioncontainerbuttonparent{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  padding-left: 150px;
+  margin-left: 300px;
+
+}
+.sectioncontainerbutton1 button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color:white;
+  margin: 20px 20px;
+  height: 45px;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 8px 20px;
+}
+.sectioncontainerbutton2 button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
   background-color: red;
-  margin: 20px 0;
+  margin: 20px 5px;
+  height: 45px;
+  font-size: 16px;
   border: none;
   border-radius: 2px;
   padding: 8px 20px;
@@ -113,9 +156,14 @@ nav{
   flex-direction: column;
   /* height: 450px;
   width: 500px; */
-  /* margin-top: -30px; */
-  background-color:  rgb(35, 35, 35);
+  margin-top: -50px;
+  /* background-color:  rgba(255, 255, 255, 0.209); */
   z-index: 1;
+}
+.ourservice{
+  margin-top: 50px;
+  color: black;
+  font-size: 30px;
 }
 .services{
   display: flex;
@@ -124,13 +172,13 @@ nav{
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 10px;
-  height: 250px;
-  width: 800px;
+  height:700px;
+  width: 1200px;
   
 }
 .services :hover{
-  background-color: red;
-  color: white;
+  /* background-color: red;
+  color: white; */
   border-radius: 10px;
 }
 .services :hover >i{
@@ -147,41 +195,43 @@ nav{
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  background-color: rgb(41, 41, 41);
-  padding: 2px 20px;
-  height: 200px;
-  width: 400px;
-  color: white ;
+  background-color: rgba(28, 9, 9, 0.159);
+  /* padding: 2px 20px; */
+  height: 600px;
+  width: 1800px;
+  color: rgba(0, 0, 0, 0.865) ;
   margin-right: 15px;
   transition: transform 0.3s ease-out;
 }
 .uidesign:hover{
   transform: scale(1.2);
+  background-color: #DBE2E9;
+  color: whitesmoke;
 }
 
-.uidesign >i{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 10px;
-  flex-direction: row;
-  color: red;
-  font-size: 25px;
-}
 .uidesign h2{
   display: flex;
   justify-content: space-between;
   margin-top: -30px;
+  margin-bottom: 5px;
   align-items: flex-start;
-  font-size: 15px;
-  padding-top: 10px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 3px;
 }
 .uidesign small{
   display: flex;
   justify-content: space-between;
-  margin-top: -20px;
+  margin-top: 20px;
+  font-size: 15px;
   align-items: flex-start; 
-  color: rgb(227, 227, 227);
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 270px;
 }
 
 .uidesign a {
@@ -200,41 +250,46 @@ nav{
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  background-color: rgb(41, 41, 41);
-  padding: 2px 20px;
-  height: 200px;
-  width: 400px;
-  color: white ;
+  background-color: rgba(28, 9, 9, 0.159);
+  /* padding: 2px 20px; */
+  height: 600px;
+  width: 1800px;
+  color: rgba(0, 0, 0, 0.865) ;
   margin-right: 15px;
   transition: transform 0.3s ease-out;
 }
 .productdesign:hover{
   transform: scale(1.2);
+  background-color: #DBE2E9;
+  color: white;
 }
-.productdesign >i{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 10px;
-  flex-direction: row;
-  color: red;
-  font-size: 25px;
-}
+
 .productdesign h2{
   display: flex;
   justify-content: space-between;
-  margin-top: -45px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   align-items: flex-start;
-  font-size: 15px;
-  padding-top: 10px;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 .productdesign small{
   display: flex;
   justify-content: space-between;
-  margin-top: -35px;
+  margin-top: -2px;
   align-items: flex-start; 
-  color: rgb(227, 227, 227);
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 330px;
+  font-size: 15px;
 }
+
 .productdesign a{
   display: flex;
   justify-content: space-between;
@@ -250,15 +305,21 @@ nav{
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  background-color: rgb(41, 41, 41);
-  padding: 2px 20px;
-  height: 200px;
-  width: 400px;
-  color: white ;
+  background-color: rgba(28, 9, 9, 0.159);
+  margin-right: 15px;
+  /* padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-top: 20px; */
+  height: 600px;
+  width: 1800px;
+  color: rgba(0, 0, 0, 0.865) ;
   transition: transform 0.3s ease-out;
 }
+
 .Brandingdesign:hover{
   transform: scale(1.2);
+  background-color: #DBE2E9;
 }
 .Brandingdesign >i{
   display: flex;
@@ -266,24 +327,45 @@ nav{
   align-items: flex-start;
   margin: 10px;
   flex-direction: row;
+  padding-bottom: 20px;
   color: red;
   font-size: 25px;
 }
 .Brandingdesign h2{
   display: flex;
   justify-content: space-between;
-  margin-top: -45px;
+  margin-top: -2px;
+  margin-bottom: -1px;
   align-items: flex-start;
-  font-size: 15px;
-  padding-top: 10px;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 26px;
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
 }
 .Brandingdesign small{
     display: flex;
     justify-content: space-between;
-    margin-top: -35px;
     align-items: flex-start; 
-    color: rgb(227, 227, 227);
+    color: rgba(0, 0, 0, 0.865) ;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 400px;
+    padding-top: 2px;
+    font-size: 15px;
   }
+  .Brandingdesign p{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; 
+      /* padding-bottom: 400px; */
+      margin-bottom: 300px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.865) ;
+    }
+
   .Brandingdesign a{
   display: flex;
   justify-content: space-between;
@@ -294,38 +376,252 @@ nav{
 .Brandingdesign a i{
   margin-left: 10px;
 }
-.myyearofexperience {
+.digital{
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(28, 9, 9, 0.159);
+  /* padding: 2px 20px; */
+  height: 600px;
+  width: 1800px;
+  color: rgba(0, 0, 0, 0.865) ;
+  margin-right: 15px;
+  transition: transform 0.3s ease-out;
+}
+.digital:hover{
+  transform: scale(1.2);
+  background-color: #DBE2E9;
+}
+.digital h2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+  margin-bottom: -20px;
+  align-items: flex-start;
+  font-size: 17px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.digital small{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  align-items: flex-start; 
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  font-size: 15px;
+  padding-right: 20px;
+
+  padding-bottom: 380px;
+}
+
+.digital p{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.865) ;
+}
+
+.digital a i{
+  margin-left: 10px;
+}
+.execution{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: rgba(28, 9, 9, 0.159);
+  /* padding: 2px 20px; */
+  height: 600px;
+  width: 1800px;
+  color: rgba(0, 0, 0, 0.865) ;
+  margin-right: 15px;
+  transition: transform 0.3s ease-out;
+}
+.execution:hover{
+  transform: scale(1.2);
+  background-color: #DBE2E9;
+  /* color: whitesmoke; */
+}
+
+.execution h2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2px;
+  margin-bottom: -20px;
+  align-items: flex-start;
+  font-size: 17px;
+  padding-top: 30px;
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+/* .execution h2:hover{
+  color: whitesmoke;
+} */
+.execution small{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2px;
+  align-items: flex-start; 
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 470px;
+  font-size: 15px;
+}
+/* .execution small:hover{
+  color: white;
+} */
+.execution p{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 13px;
+  color: whitesmoke;
+  /* margin-top: 150px; */
+}
+
+.execution a{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: flex-start; 
+  color: red;
+}
+.execution a i{
+  margin-left: 10px;
+}
+.Howwework{
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
-  margin-left: 5px;
-  position:relative;
-  transition: transform 0.1s step-end;
-  white-space: nowrap;
+  background-color: rgba(49, 48, 48, 0.099);
+  margin-bottom: 100px;
+  color: rgba(0, 0, 0, 0.865) ;
 }
-.myyearofexperience:hover{
-  transform: scale(1.6);
-}
-.myyearofexperience h1{
+.howwework h1{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  color: red;
-  text-align: center;
-  font-size: 45px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 40px;
+    color: rgba(0, 0, 0, 0.865);
 }
-.myyearofexperience h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-left: 5px;
-    font-size: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.howwework h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
+.workinglist{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.workinglist ul li h5{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 19px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.865) ;
+
+}
+.workinglist ul li{
+  color: rgba(0, 0, 0, 0.865) ;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+
+
+}
+.workinglist ul li small{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.865) ;
+
+}
+.workwithus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+.workwithus h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: -50px;
+  padding-top: 30px;
+  font-size: 25px;
+  color: black;
+}
+.workwithus h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.workwithus small{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.contactus form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(60, 59, 59, 0.136);
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 10px;
+}
+.form h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .Service2{
     display: flex;
     justify-content: space-evenly;
@@ -333,12 +629,20 @@ nav{
     margin-bottom: 180px;
     margin-left: 130px;
 }
+.clientparents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
 .client{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 50px;
   flex-direction: column;
+  
   
 }
 
@@ -349,8 +653,8 @@ nav{
   align-items: center;
   flex-direction: column;
   background-color:  rgba(41, 41, 41, 0.962);
-  height: 60px;
-  width: 170px;
+  height: 100px;
+  width: 210px;
   transition: transform 0.3s ease-out;
 }
 .clientdetails:hover{
@@ -361,40 +665,14 @@ nav{
   justify-content: center;
   align-items: center;
   color: red;
-  font-size: 15px;
+  font-size: 25px;
+  text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .clientdetails small{
   color: white;
-  font-size: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.projects{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(41, 41, 41, 0.962);
-  height: 60px;
-  width: 170px;
-  margin-top: 10px;
-  transition: transform 0.3s ease-out;
-}
-.projects:hover{
-  transform: scale(1.2);
-}
-.projects h2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: red;
-  font-size: 15px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  transition: transform 0.3s ease-out;
-}
-.projects small{
-  color: white;
-  font-size: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .yearsofexperience3{
@@ -410,8 +688,8 @@ nav{
   align-items: center;
   flex-direction: column;
   background-color: rgba(41, 41, 41, 0.962);
-  height: 60px;
-  width: 170px;
+  height: 100px;
+  width: 210px;
   margin-bottom: -20px;
   transition: transform 0.3s ease-out;
 }
@@ -423,12 +701,13 @@ nav{
   justify-content: center;
   align-items: center;
   color: red;
-  font-size: 15px;
+  font-size: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .myexperience small{
   color: white;
-  font-size: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .Achievement{
@@ -437,8 +716,8 @@ nav{
   align-items: center;
   flex-direction: column;
   background-color: rgba(41, 41, 41, 0.962);
-  height: 60px;
-  width: 170px;
+  height: 100px;
+  width: 210px;
   margin-top: 30px;
   transition: transform 0.3s ease-out;
 }
@@ -450,20 +729,65 @@ nav{
   justify-content: center;
   align-items: center;
   color: red;
-  font-size: 15px;
+  font-size: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .Achievement small{
   color: white;
-  font-size: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(41, 41, 41, 0.962);
+  height: 100px;
+  width: 210px;
+  margin-top: 10px;
+  transition: transform 0.3s ease-out;
+}
+.projects:hover{
+  transform: scale(1.2);
+}
+.projects h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: transform 0.3s ease-out;
+}
+.projects small{
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .features{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 40px 0;
-  color: white;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  margin-top: -50px;
+  color: black;
+}
+.featuretext small{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.featuretext h2{
+  color: black;
+}
+.featuretext{
+  margin-left: -100px;
 }
 
 .featuresbutton button{
@@ -474,7 +798,7 @@ nav{
   color: white;
   height: 40px;
   width: 100px;
-  border: none;
+  border: none; 
 }
 .projectsamples{
   display: flex;
@@ -510,21 +834,27 @@ nav{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: rgb(223, 6, 6);
-  transition: transform 0.5s ease-out;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* background-color: rgb(223, 6, 6); */
+  /* transition: transform 0.5s ease-out; */ 
 }
-.image1:hover{
+
+/* .image1:hover{
   transform: scale(1.2);
-}
+} */
 
 .image1text{
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: -20px;
-  margin-left: -100px;
+  margin-top: 5px;
+  margin-left: 3px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
+
 .image1text h2{
   display: flex;
   justify-content: space-evenly;
@@ -532,16 +862,22 @@ nav{
   color: white;
   font-size: 18px;
   margin-top: 10px;
+  padding-left: 10px;
 }
-.image1text a{
+
+.image1text small{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: red;
+  color: whitesmoke;
   font-size: 13px;
   margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .image1text a i{
   display: flex;
   justify-content: center;
@@ -562,25 +898,29 @@ nav{
   flex-direction: column;
   
 }
+
 .image2 img{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: rgb(41, 41, 41);
+  /* background-color: rgb(41, 41, 41); */
   position: relative;
   transition: transform 0.5s ease-out;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-.image2:hover{
+
+/* .image2:hover{
   transform: scale(1.2);
-}
+} */
 
 .image2text {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  margin-top: -20px;
-  margin-left: -200px;
+  margin-top: 5px;
+  margin-left: 3px;
   
 }
 .image2text h2{
@@ -590,16 +930,22 @@ nav{
   color: white;
   font-size: 18px;
   margin-top: 10px;
+  padding-left: 97px;
 }
-.image2text a{
+
+.image2text small{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: red;
+  color: whitesmoke;
   font-size: 13px;
   margin-top: 10px;
+  padding-left: 97px;
+  padding-right: 97px;
+  line-height: 25px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .image2text a i{
   display: flex;
   justify-content: center;
@@ -609,13 +955,13 @@ nav{
   margin-top: 3px;
   margin-left: 5px;
 }
+
 .newcontainer1{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  
   background-color: rgb(41, 41, 41);
-  height: 220px;
+  height: 390px;
   width: 400px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -628,7 +974,7 @@ nav{
   justify-content: center;
   align-items: flex-start;
   background-color: rgb(41, 41, 41);
-  height: 220px;
+  height: 390px;
   width: 400px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -655,7 +1001,7 @@ nav{
   justify-content: center;
   align-items: flex-start;
   background-color: rgb(41, 41, 41);
-  height: 220px;
+  height: 390px;
   width: 400px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -675,12 +1021,13 @@ nav{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: rgb(223, 6, 6);
-  transition: transform 0.5s ease-out;
+  padding-left: 100px;
+  padding-right: 100px;
+  /* transition: transform 0.5s ease-out; */
 }
-.image13:hover{
+/* .image13:hover{
   transform: scale(1.2);
-}
+} */
 .image1text14{
   display: flex;
   justify-content: space-evenly;
@@ -692,20 +1039,26 @@ nav{
 .image1text14 h2{
   display: flex;
   justify-content: space-evenly;
+  padding-left: 197px;
+  padding-top: 25px;
   align-items: flex-start;
   color: white;
   font-size: 18px;
   margin-top: 10px;
 }
-.image1text14 a{
+.image1text14 small{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: red;
+  color: whitesmoke;
+  padding-left: 190px;
+  padding-right: 190px;
+  line-height: 25px;
   font-size: 13px;
   margin-top: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .image1text14 a i{
   display: flex;
   justify-content: center;
@@ -715,6 +1068,7 @@ nav{
   margin-top: 3px;
   margin-left: 5px;
 }
+
 .anothercontainer21{
   display: flex;
   justify-content: space-evenly;
@@ -723,12 +1077,13 @@ nav{
   margin-bottom: 20px;
   margin-top: 10px;
 }
+
 .newcontainer21{
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-color: rgb(41, 41, 41);
-  height: 220px;
+  height: 390px;
   width: 400px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -736,6 +1091,7 @@ nav{
   position: relative;
   z-index: 1;
 }
+
 .image21{
   display: flex;
   justify-content: flex-start;
@@ -749,17 +1105,12 @@ nav{
 .image21 img{
   display: flex;
   justify-content: flex-start;
+  padding-left: 100px;
+  padding-right: 100px;
   align-items: flex-start;
-  background-color: rgb(41, 41, 41);
-  position: relative;
-  transition: transform 0.5s ease-out;
-  
-}
-.image21:hover{
-  transform: scale(1.2);
+  position: relative;  
 }
 .image2text11{
-
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -768,6 +1119,7 @@ nav{
   margin-left: -200px;
   
 }
+
 .image2text11 h2{
   display: flex;
   justify-content: center;
@@ -775,14 +1127,18 @@ nav{
   color: white;
   font-size: 18px;
   margin-top: 10px;
+  padding-left: 300px;
+  padding-top: 25px;
 }
-.image2text11 a{
+
+.image2text11 small{
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: red;
+  color: whitesmoke;
   font-size: 13px;
   margin-top: 10px;
+  padding-left: 300px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .image2text11 a i{
@@ -795,42 +1151,56 @@ nav{
   margin-left: 5px;
   
 }
-.worktogether{
+.Whychooseus{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color:  rgb(41, 41, 41);
-  height: 200px;
+  background-color:  rgba(0, 0, 0, 0.086);
+  height: 350px;
   width: 900px;
   margin-left: 150px;
   margin-bottom: 30px;
 
 }
-.worktogethertext{
+.whychooseus{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  
 }
-.worktogethertext h2{
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: white;
-  margin-left: -250px;
-  margin-bottom: 10px;
-}
-.worktogethertext small{
+.whychooseus h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  margin-right: -65px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 50px;
 }
-.worktogetherbutton a button{
+.whychooseus h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+  padding-bottom: 20px;
+}
+.whychooseus small{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  color: black;
+  margin-right: -90px;
+  padding-bottom: 50px;
+  line-height: 40px;
+  font-size: 17px;
+}
+/* .worktogetherbutton a button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -841,12 +1211,12 @@ nav{
   width: 120px;
   border: none;
   color: white;
-}
+} */
 .websitelink a p{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   margin-top: -25px;
   margin-bottom: 25px;
 
@@ -862,12 +1232,14 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgba(59, 28, 28, 0.834);
   margin-left:10px ;
-  margin-bottom: 20px;
-  
-  font-size: 11px;
+  margin-bottom: 20px; 
+  font-size: 15px;
   margin-top: 20px;
+}
+.navbottom p:hover{
+  color: rgb(255, 12, 12)
 }
 footer{
   display: flex;
@@ -875,10 +1247,22 @@ footer{
   align-items: center;
   background-color:rgb(41, 41, 41) ;
 }
-.leftfooter img{
+.leftfooter h5{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(210, 210, 210);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.leftfooter h4{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(210, 210, 210);
+  padding-bottom: 10px;
+  font-size: 10px;
+
 }
 .middlefooter{
   display: flex;
@@ -889,7 +1273,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(98, 98, 98);
+  color: rgb(210, 210, 210);
   margin-left: 20px ;
 }
 .rightfooter{
@@ -901,13 +1285,418 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-right: 8px;
+  margin-right: 10px;
   font-size: 13px;
   color: red;
-}.rightfooter{
+}.rightfooter p{
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: rgb(210, 210, 210);
   font-size: 11px;
+  margin-right: 20px;
+}
+.sectioncontainer {
+  background-image: url('Assets/Project1.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin-top: -20px;
+}
+.with-blur-backdrop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.474);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(1px);
+  padding: 20px 30px;
+  width: 1500px;
+  height: 500px;
+ 
+}
+/* contact us page */
+.contactusbackground{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  background-image: url('Assets/Davidsecourt5.jpeg');
+  background-size: cover;
+  background-position: center;
+  margin-top: -7px;
+  max-width: 800px;
+  height: 700px;
+  margin-left: 280px;
+}
+.contactusblurry{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(10, 10, 10, 0.474);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  padding: 20px 30px;
+  width: 800px;
+  height: 700px;
+  
+}
+.withdropbackdroping{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(10, 10, 10, 0.474);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(1px);
+  padding: 20px 30px;
+  width: 800px;
+  height: 700px;
+}
+.contactusform {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  
+}
+.contacthead label{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 80px;
+  padding-top: 10px;
+}
+.contactusform form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 0.5px solid silver;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  color: white;
+  height: 570px;
+  line-height: 8px;
+  background: rgba(255, 255, 255, 0.358);
+  backdrop-filter: blur(40px);
+}
+.contactusform form input{
+  outline: none;
+  width: 300px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 0.5px solid silver;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgba(10, 10, 10, 0.474);
+  color: whitesmoke;
+  height: 50px;
+  width: 180px;
+  border-radius: 30px;
+  margin-left: 65px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  
+}
+.contactusform select {
+  width: 300px;
+  /* padding: 15px 16px; */
+  border-radius: 10px;
+  border: none;
+  border-bottom: 0.5px solid silver;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: black;
+  line-height: normal;
+  height: 40px; /* must be larger than padding */
+  padding: 10px 16px;
+  background-color: white;
+}
+
+#textarea{
+  outline: none;
+  width: 300px;
+  height: 60px;
+  padding: 13px 10px;
+  border-radius: none;
+  border: none;
+  border-bottom: 0.5px solid silver;
+  margin-top: 10px;
+}
+.timeline select{
+  outline:none;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -5px;
+}
+.budget select{
+  outline:none;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -5px;
+}
+/* /* about us page */
+.aboutus1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutus1 h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.aboutus1 p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  margin: 50px;
+}
+.ourstory{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ourstory h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.ourstory P{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  margin: 50px;
+}
+.whatwedo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whatwedo h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.whatwedo h3{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: 20px;
+  margin: 20px ;
+}
+.whatwedo p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+
+}
+.whychooseus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.whychooseus h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.whychooseus ul li h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.whychooseus li p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 5px;
+  margin-left: 5px
+}
+
+
+/* --- Slideshow Container --- */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* --- Slides --- */
+.slideshow { position: relative; width: 100%; height: 100%; }
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.slide.active { opacity: 1; }
+
+/* Overlay */
+.overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+
+/* Content */
+.content { position: relative; max-width: 820px; text-align: left; }
+h1 { font-size: 3.6rem; margin-bottom: 24px; color: white; }
+h2 { font-size: 2.6rem; margin-bottom: 20px; color: white;}
+p { font-size: 1.25rem; line-height: 1.7; color: white;}
+ul { list-style: none; }
+ul li { font-size: 1.15rem; margin-bottom: 10px; padding-left: 18px; position: relative; color: white;}
+ul li::before { content: "*"; position: absolute; left: 0; }
+
+/* Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    background: rgba(0,0,0,0.4);
+    border: none;
+    border-radius: 50%;
+    user-select: none;
+}
+.prev { left: 30px; }
+.next { right: 30px; }
+
+/* Dots */
+.dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot.active { background: #fff; }
+
+/* Other Content */
+.other-content { padding: 50px 80px; background: white; }
+.other-content h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+.otherproject1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+.img2 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.otherproject2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img3 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 92px;
+}
+.img4 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.otherproject3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img5 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  /* padding-right: 12px; */
+  margin-right: 100px;
+}
+.img6 img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  margin-left: 5px;
 }
